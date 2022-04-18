@@ -1,0 +1,92 @@
+.card {
+  width: 250px;
+  height: 303px;
+  background: #ffffaa;
+  box-shadow: 1px 1px 3px rgba(33, 33, 33, 0.25);
+  border-radius: 4px;
+}
+
+.imageContainer {
+  width: 250px;
+  height: 134px;
+  background-color: aqua;
+}
+
+.content {
+  width: 250px;
+  height: 169px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titleDiv {
+  width: 233px;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.titleH2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.contacts {
+  width: 161px;
+  height: 79px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  margin: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  padding: 2px 0;
+  color: #000000;
+}
+
+.contactIcons {
+  margin-right: 6px;
+}
+
+.buttonContainer {
+  width: 233px;
+  height: 21px;
+  background-color: aquamarine;
+}
+
+.showButton {
+  float: right;
+  width: 95px;
+  height: 21px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+  background: #212121;
+  border-radius: 2px;
+  border-style: none;
+}
