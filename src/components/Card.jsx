@@ -3,6 +3,7 @@ import locationIcon from "../images/location-icon.svg";
 import phoneIcon from "../images/phone-icon.svg";
 import internetIcon from "../images/internet-icon.svg";
 import mailIcon from "../images/mail-icon.svg";
+import { FaRegHeart } from "react-icons/fa";
 
 function Card() {
   return (
@@ -11,7 +12,13 @@ function Card() {
       <div className={classes.content}>
         <div className={classes.titleDiv}>
           <h2 className={classes.titleH2}>Vanessa</h2>
-          <span>love</span>
+          <FaRegHeart
+            onClick={() => {
+              console.log("Icon has been clicked");
+            }}
+            style={{ fontWeight: "normal" }}
+          />
+          {/* <FaHeart style={{ color: "red" }} /> */}
         </div>
         <div className={classes.contacts}>
           <p className={classes.info}>

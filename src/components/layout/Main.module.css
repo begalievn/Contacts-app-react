@@ -1,3 +1,15 @@
-.container {
-  margin-left: 15px;
+.main {
+  width: 1155px;
+  margin: 0 auto;
+  background-color: rgb(230, 246, 222);
+}
+
+.cardsContainer {
+  width: 1155px;
+  min-height: 1011px;
+  background-color: rgb(197, 232, 244);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 52px;
+  row-gap: 42px;
 }

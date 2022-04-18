@@ -1,9 +1,9 @@
 .card {
   width: 250px;
   height: 303px;
-  background: #ffffaa;
   box-shadow: 1px 1px 3px rgba(33, 33, 33, 0.25);
   border-radius: 4px;
+  background-color: aquamarine;
 }
 
 .imageContainer {
@@ -26,7 +26,7 @@
   height: 21px;
   display: flex;
   justify-content: space-between;
-  background-color: aliceblue;
+  align-items: center;
 }
 
 .titleH2 {
@@ -72,7 +72,6 @@
 .buttonContainer {
   width: 233px;
   height: 21px;
-  background-color: aquamarine;
 }
 
 .showButton {
