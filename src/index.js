@@ -5,16 +5,31 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
+import { Provider } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import contactReducer from "./features/contact";
+import allContactsReducer from "./features/allContacts";
+import favoriteContactsReducer from "./features/favoriteContacts";
+
+const store = configureStore({
+  reducer: {
+    contact: contactReducer,
+    allContacts: allContactsReducer,
+    favoriteContacts: favoriteContactsReducer,
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

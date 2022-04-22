@@ -1,16 +1,65 @@
 .main {
-  width: 1155px;
+  width: 90%;
   margin: 0 auto;
-  background-color: rgb(230, 246, 222);
 }
 
 .cardsContainer {
-  width: 1155px;
-  min-height: 1011px;
-  background-color: rgb(197, 232, 244);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  min-height: 90vh;
+
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   column-gap: 52px;
-  row-gap: 42px;
+  row-gap: 42px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 52px;
+}
+
+.configContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+  margin-top: 47px;
+}
+
+.searchDiv {
+  width: 50%;
+}
+
+.inputField {
+  width: 80%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.35);
+  border-radius: 2px;
+
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: rgba(33, 33, 33, 0.5);
+  padding-left: 16px;
+}
+
+.filtersDiv {
+  width: 153px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtersDiv img:hover {
+  cursor: pointer;
+}
+
+.active path {
+  fill: #d32f2f;
 }
