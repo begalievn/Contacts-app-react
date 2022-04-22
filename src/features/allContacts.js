@@ -8,6 +8,7 @@ export const allContactsSlice = createSlice({
   reducers: {
     uploadAllContacts: (state, action) => {
       state.value = action.payload;
+      localStorage.setItem("users", JSON.stringify(action.payload));
     },
   },
 });

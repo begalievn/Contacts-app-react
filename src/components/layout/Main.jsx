@@ -54,8 +54,8 @@ function Main() {
 
   const displayCardsFromSearchField = () => {
     const re = new RegExp("^" + searchInputValue + ".*", "i");
-    const arrtoDisplay = allContacts.filter((contact) =>
-      contact.firstName.match(re)
+    const arrtoDisplay = allContacts.filter(
+      (contact) => contact.firstName.match(re) || contact.lastName.match(re)
     );
     return arrtoDisplay;
   };
